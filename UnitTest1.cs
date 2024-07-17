@@ -16,18 +16,25 @@ public class UnitTest1 : IDisposable
 
     public UnitTest1()
     {
-        _driver = GetDriverType("edge");
+        _driver = GetDriverType(BrowserType.Firefox);
     }
 
-    private IWebDriver GetDriverType(string browserType)
+    private IWebDriver GetDriverType(BrowserType browserType)
     {
         return browserType switch
         {
-            "chrome" => new ChromeDriver(),
-            "firefox" => new FirefoxDriver(),
-            "edge" => new EdgeDriver(),
+            BrowserType.Chrome => new ChromeDriver(),
+            BrowserType.Firefox => new FirefoxDriver(),
+            BrowserType.Edge => new EdgeDriver(),
             _ => new ChromeDriver()
         };
+    }
+
+    public enum BrowserType
+    {
+        Chrome,
+        Firefox,
+        Edge
     }
 
     [Fact]

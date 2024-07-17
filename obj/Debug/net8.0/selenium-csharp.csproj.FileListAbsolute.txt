@@ -100,3 +100,4 @@
 /home/edwinchi/Documents/selenium-csharp/bin/Debug/net8.0/selenium-manager/macos/selenium-manager
 /home/edwinchi/Documents/selenium-csharp/bin/Debug/net8.0/selenium-manager/windows/selenium-manager.exe
 /home/edwinchi/Documents/selenium-csharp/bin/Debug/net8.0/WebDriver.dll
+/home/edwinchi/Documents/selenium-csharp/obj/Debug/net8.0/selenium-csharp.sourcelink.json
